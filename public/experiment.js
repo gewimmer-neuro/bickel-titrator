@@ -79,7 +79,7 @@ var getStim = function() {
     displayed_amounts = [delayed_amount, immediate_amount] // in order from left to right
   }
 
-  var stim = "<div class = centerbox id='container'><p class = center-block-text>Please select the option that you would prefer pressing <strong>'f'</strong> for left <strong>'j'</strong> for right:</p><div class='table'><div class='row'><div id = 'option'><center><font color='green'>$" + left_amt + "<br>" + left_del + "</font></center></div><div id = 'option'><center><font color='green'>$" + right_amt + "<br>" + right_del + "</font></center></div></div></div></div>"
+  var stim = "<div class = centerbox id='container'><p class = center-block-text>Select the option (using 'g' and 'h')</p><div class='table'><div class='row'><div id = 'option'><center><font color='green'>$" + left_amt + "<br>" + left_del + "</font></center></div><div id = 'option'><center><font color='green'>$" + right_amt + "<br>" + right_del + "</font></center></div></div></div></div>"
   return stim
 }
 
@@ -158,7 +158,7 @@ var delays = jsPsych.randomization.shuffle(['1 day', '1 week', '1 month', '6 mon
   '5 years', '25 years'
 ])
 var magnitudes = jsPsych.randomization.shuffle([10, 1000, 1000000])
-var choices = [70, 74]
+var choices = [71, 72] // 70, 74 are f and j; 71, 72 g and h
 var curr_delay = 0
 var curr_delay_in_days = 0
 var original_immediate = 0
